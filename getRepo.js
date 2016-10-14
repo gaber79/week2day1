@@ -1,7 +1,7 @@
 const request = require("request");
 const fs = require("fs")
 
-function getRepoContributors(repoOwner, repoName, cb) {
+function getRepoContributorsImages(repoOwner, repoName, cb) {
 
 	var options = {
 		url: "https://api.github.com/repos/" + repoOwner + "/" + repoName + "/contributors",
@@ -29,6 +29,6 @@ function getRepoContributors(repoOwner, repoName, cb) {
 	})
 }
 
-getRepoContributors("lighthouse-labs", "laser_shark", function(userData) {
+getRepoContributorsImages("lighthouse-labs", "laser_shark", function(userData) {
 	 
 });
