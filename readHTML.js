@@ -36,6 +36,10 @@ var handleHTML = function(data) {
 
 readHTML("http://example.com", handleHTML);
 
+function printHTML (HTMLdata) {
+	
+}
+
 
 // var request = require('request');
 
@@ -63,7 +67,7 @@ readHTML("http://example.com", handleHTML);
 // 	// return ;
 // }
 
-// readHTML("http://example.com", function(data){
-// 	console.log("I'm the callback!" + data);
-// });
+readHTML("http://example.com", function(data){
+	console.log("I'm the callback!" + data);
+});
 
